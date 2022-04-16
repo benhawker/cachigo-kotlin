@@ -1,0 +1,8 @@
+data:
+  # supplier1: "https://api.jsonbin.io/b/6251e684d20ace068f95f37b" 
+  # supplier2: "https://api.jsonbin.io/b/6251e676d8a4cc06909e660d"
+  supplier1: "https://api.jsonbin.io/b/6259d255c5284e31154df64f"
+  supplier2: "https://api.jsonbin.io/b/6259e155c5284e31154df9d4"
+   
+  # supplier3: "https://api.myjson.com/bins/15ktg"
+  # supplier4: "https://api.myjson.com/bins/doesnotexistwdqefwrgethrfweqdefwrbrwfr"
