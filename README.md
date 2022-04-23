@@ -2,24 +2,29 @@
 
 ### Testing:
 
-Run the specs with `???`.
-
+Run the specs:
+```
+$ gradle clean test
+```
 
 
 ### Usage:
 
-Install project dependencies:
+Build it:
+```
+./gradlew build --scan
 ```
 
-```
 
 Run the server (serving on PORT 9000):
 ```
 $ ./gradlew run
 ```
 
+
 Make a GET request to:
 ```
+http://localhost:9000/api/health
 http://localhost:9000/api/hotels
 ```
 
@@ -93,8 +98,7 @@ For caching response you can use anything you want - whether it's Redis or Memca
 
 ### Resources
 
-- there are 3 suppliers, each of them has different url:
-  - https://api.myjson.com/bins/2tlb8
-  - https://api.myjson.com/bins/42lok
-  - https://api.myjson.com/bins/15ktg
+- there are 2 suppliers, each of them has different url:
+  - https://api.jsonbin.io/b/6259d255c5284e31154df64f
+  - https://api.jsonbin.io/b/6259e155c5284e31154df9d4
 - please note that for the simplification and easiness of testing these are static urls, they always return the same values
