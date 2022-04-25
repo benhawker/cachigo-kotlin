@@ -10,6 +10,11 @@ $ gradle clean test
 
 ### Usage:
 
+Lint it:
+```
+./gradlew ktlintFormat
+```
+
 Build it:
 ```
 ./gradlew build --scan
