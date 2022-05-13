@@ -7,7 +7,7 @@ import org.gradle.api.tasks.testing.logging.TestLogEvent.STANDARD_ERROR
 plugins {
     id("org.jetbrains.kotlin.jvm") version "1.6.20"
     id("org.jetbrains.kotlin.plugin.serialization") version "1.4.20"
-
+    id("com.github.johnrengelman.shadow") version "7.0.0"
     id("org.jlleitschuh.gradle.ktlint") version "10.2.1"
 
     application
@@ -48,6 +48,12 @@ tasks.withType<Test>().configureEach {
         showExceptions = true
         showCauses = true
         showStackTraces = true
+    }
+}
+
+tasks.withType<Jar> {
+    manifest {
+        attributes["Main-Class"] = "com.cachigo.MainKt"
     }
 }
 

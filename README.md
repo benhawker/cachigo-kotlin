@@ -26,6 +26,17 @@ Run the server (serving on PORT 9000):
 $ ./gradlew run
 ```
 
+### Docker:
+
+```
+docker build -t cachigo .
+```
+
+
+```
+docker run -p 127.0.0.1:9000:9000 cachigo
+```
+
 
 Make a GET request to:
 ```
